@@ -1,0 +1,6 @@
+# Plan : test
+## Delivery details for vehicle ID: 0 ConventionalVan 
+Delivery,41.6467,-91.5488<br>Delivery,41.6461,-91.5317<br>Delivery,41.6433,-91.5313<br>Delivery,41.6441,-91.53<br>Delivery,41.6435,-91.5059<br>Delivery,41.6446,-91.5023<br>Delivery,41.6447,-91.5025<br>Delivery,41.6493,-91.5016<br>Delivery,41.6885,-91.4909<br>Delivery,41.6766,-91.5188<br>Delivery,41.68,-91.5268<br>Delivery,41.6641,-91.5314<br>Delivery,41.6649,-91.5319<br>Delivery,41.6628,-91.5327<br>Delivery,41.663,-91.5327<br>Delivery,41.6631,-91.5327<br>Delivery,41.6639,-91.5349<br>Delivery,41.6613,-91.5361<br>Delivery,41.6607,-91.5333<br>Delivery,41.6599,-91.5324<br>Delivery,41.6604,-91.5298<br>Delivery,41.661,-91.5299<br>Delivery,41.6588,-91.5324<br>Delivery,41.6591,-91.5344<br>Delivery,41.6599,-91.535<br>Delivery,41.666,-91.5536<br>Delivery,41.6724,-91.5659<br>Delivery,41.6727,-91.5667<br>Delivery,41.6716,-91.5658<br>Delivery,41.6765,-91.5794<br>Delivery,41.6796,-91.5905<br>Delivery,41.6818,-91.5917<br>Delivery,41.6884,-91.6017<br>Delivery,41.6884,-91.6014<br>Delivery,41.6909,-91.6027<br>Delivery,41.6979,-91.6072<br>Delivery,41.6989,-91.5661<br>Delivery,41.6521,-91.5762<br>Delivery,41.65,-91.5744<br>depot,41.6448,-91.551<br>
+### Total distance travelled: 53.93 km 
+### Total time taken: 40.45 minutes 
+### Total emissions:173.11 g of CO2
