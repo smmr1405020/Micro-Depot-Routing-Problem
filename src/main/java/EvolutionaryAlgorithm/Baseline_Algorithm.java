@@ -56,7 +56,7 @@ public class Baseline_Algorithm {
 		File scenarioFile = new File(a);
 
 
-		INIT = 100;
+		INIT = 1000;
 		MAX_EVALS = 1500;
 
 		

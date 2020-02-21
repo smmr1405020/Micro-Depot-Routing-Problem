@@ -54,6 +54,20 @@ public class Run_Comparison {
             int myalg_better = 0;
             int equal = 0;
 
+            double original_best = Double.MAX_VALUE;
+            for(String key : original.keySet()){
+                if(original_best>original.get(key)){
+                    original_best = original.get(key);
+                }
+            }
+
+            double myalgo_best = Double.MAX_VALUE;
+            for(String key : myalgo.keySet()){
+                if(myalgo_best>myalgo.get(key)){
+                    myalgo_best = myalgo.get(key);
+                }
+            }
+
             for( String key: myalgo.keySet()){
                 double val_my = myalgo.get(key);
                 if(original.containsKey(key)){
@@ -87,6 +101,8 @@ public class Run_Comparison {
             System.out.println("\n\n");
             System.out.println("FILE1 Better: "+(new_in_org+org_better));
             System.out.println("FILE2 Better: "+(new_in_myalg+myalg_better));
+            System.out.println("Original best cost: "+original_best);
+            System.out.println("MyAlgo best cost: "+myalgo_best);
 
 
            /* System.out.println(new_in_org+" "+new_in_myalg+" "+org_better+" "+myalg_better+" "+equal);

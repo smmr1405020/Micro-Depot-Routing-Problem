@@ -5,8 +5,8 @@ import java.io.File;
 
 public class Main {
 
-	public static String FILENAME = "Dataset"+"\\"+"iowa_2.csv";
-	public static String OSMFILE_NAME = "iowa_export.pbf";
+	public static String FILENAME = "Dataset"+"\\"+"ny_5.csv";
+	public static String OSMFILE_NAME = "ny_export.pbf";
 
 	public static void main(String[] args)
 	{

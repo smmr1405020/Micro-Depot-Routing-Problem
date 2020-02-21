@@ -22,7 +22,7 @@ public class Scenario {
 			instance = new Scenario();
 		return instance;
 	}
-	
+
 	private  ArrayList<Location> rvLocations = new ArrayList<Location>();
 	private  ArrayList<Vehicle>rvVehicles = new ArrayList<Vehicle>();
 	private  ArrayList<Delivery> deliveries = new ArrayList<Delivery>();

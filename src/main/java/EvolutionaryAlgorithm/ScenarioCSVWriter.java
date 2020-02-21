@@ -17,12 +17,12 @@ public class ScenarioCSVWriter {
 		try {
 			//Open a new BufferedReader to prepare reading the CSV file
 			BufferedReader br = new BufferedReader(new FileReader(file));
-			BufferedReader br_maind = new BufferedReader(new FileReader("main_depots_iowa.txt")) ;
-			BufferedReader br_md = new BufferedReader(new FileReader("micro_depots_iowa.txt"));
-			BufferedReader br_dest = new BufferedReader(new FileReader("deliveries_iowa.txt"));
+			BufferedReader br_maind = new BufferedReader(new FileReader("ny_main_depots.txt")) ;
+			BufferedReader br_md = new BufferedReader(new FileReader("ny_micro_depots.txt"));
+			BufferedReader br_dest = new BufferedReader(new FileReader("ny_deliveries.txt"));
 
 
-			BufferedWriter bw_newds = new BufferedWriter(new FileWriter("mdrds_5.csv"));
+			BufferedWriter bw_newds = new BufferedWriter(new FileWriter("ny_1.csv"));
 
 			//A variable to write each line to
 			String readin = "";
@@ -59,15 +59,15 @@ public class ScenarioCSVWriter {
 			double [][] microdepot_loc = new double[1000][2];
 			double [][] delivery_loc = new double[1000][2];
 
-			double p1 = 0.68 + (double)(rand.nextInt(3))/ 10;
-			double p2 = 0.38 + (double)(rand.nextInt(6)) / 10;
+			double p1 = 0.45 + (double)(rand.nextInt(3))/ 10;
+			double p2 = 0.45 + (double)(rand.nextInt(6)) / 10;
 
 			int num_microdepots_desired = 0;
 			int num_deliveries_desired = 0;
 
 			while( (readin = br_md.readLine()) != null){
 				double p3 = (double)(rand.nextInt(99)) / 100;
-				if(p3 < p1){
+				if(p3 < p1 && num_microdepots_desired<12){
 					String [] splitlines = readin.split(",");
 					microdepot_loc[num_microdepots_desired][0] = Double.parseDouble(splitlines[1]);
 					microdepot_loc[num_microdepots_desired][1] = Double.parseDouble(splitlines[0]);
@@ -77,7 +77,7 @@ public class ScenarioCSVWriter {
 
 			while( (readin = br_dest.readLine()) != null){
 				double p3 = (double)(rand.nextInt(99))/ 100;
-				if(p3 < p2){
+				if(p3 < p2 && num_deliveries_desired<118){
 					String [] splitlines = readin.split(",");
 					delivery_loc[num_deliveries_desired][0] = Double.parseDouble(splitlines[1]);
 					delivery_loc[num_deliveries_desired][1] = Double.parseDouble(splitlines[0]);
