@@ -1,5 +1,5 @@
 This is a test scenario,,,,,,,,,
-OSMFILE,iowa_export_3.pbf,,,,,,,,
+OSMFILE,iowa_export.pbf,,,,,,,,
 ,Latitude,Longitude,Emissions,Speed,Capacity,cost/km,fixedCost,Identity,Route
 VEHICLE,41.6451,-91.5536,3.21,80,400,10,500,ConventionalVan,car
 RVVEHICLE,41.6451,-91.5536,0,80,30,5,100,bike,bike

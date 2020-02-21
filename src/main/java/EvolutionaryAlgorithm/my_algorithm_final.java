@@ -505,8 +505,9 @@ public class my_algorithm_final {
 
 	private static void writeRes2(){
 
+		String fs = Main.FILENAME.split(".")[0];
 //
-		File file = new File("myalgo_final.csv");
+		File file = new File("MyAlgo_" + fs + "_" +java.time.LocalDateTime.now()+".csv");
 
 		try{
 			DecimalFormat df = new DecimalFormat("#.00");

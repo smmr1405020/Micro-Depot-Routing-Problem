@@ -10,6 +10,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.Timer;
 import java.util.zip.ZipOutputStream;
 
 
@@ -56,7 +57,7 @@ public class Baseline_Algorithm {
 		File scenarioFile = new File(a);
 
 
-		INIT = 1000;
+		INIT = 100;
 		MAX_EVALS = 1500;
 
 		
@@ -340,8 +341,9 @@ public class Baseline_Algorithm {
 
 	private static void writeRes2(){
 
+		String fs = Main.FILENAME.split(".")[0];
 //
-		File file = new File("original_mapelites.csv");
+		File file = new File("OriginalAlgo_" + fs + "_" +java.time.LocalDateTime.now()+".csv");
 
 		try{
 			DecimalFormat df = new DecimalFormat("#.00");

@@ -5,13 +5,13 @@ import java.io.File;
 
 public class Main {
 
-	public static String FILENAME = "Dataset"+"\\"+"ny_5.csv";
+	public static String FILENAME = "Dataset"+"\\"+"ny_1.csv";
 	public static String OSMFILE_NAME = "ny_export.pbf";
 
 	public static void main(String[] args)
 	{
 		//Create a new instance of Model
-		Model sim = new Model();
+	/*	Model sim = new Model();
 
 		//Create a new instance of the CSV Reader
 		CSVReader read = new CSVReader();
@@ -21,6 +21,8 @@ public class Main {
 		read.readFile(infile, sim);
 
 		//Run the function to create a path between destinations
-		sim.run("test");
+		sim.run("test"); */
+
+		System.out.println(java.time.LocalDateTime.now());
 	}
 }
