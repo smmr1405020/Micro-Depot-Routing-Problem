@@ -386,24 +386,37 @@ public class MDVRP_NSGA3_modified {
 
 		File scenarioFile = new File(a);
 
-
 		INIT = 10;
 		MAX_EVALUATION = 20;
+		TOTAL_EVALUATION=0;
+		improvements=0;
 
-		
-		outName = "OutputDir" + rnd.nextInt(Integer.MAX_VALUE);
-		
-		if (true)
-			twoOpt = true;
-		else
-			twoOpt = false;
-		
-		
+		improvements_mutation=0;
+		improvements_crossover=0;
+		attempt_crossover=0;
+		attempt_mutation=0;
+		improvements_new=0;
+		attempt_new=0;
+
 		Scenario myScenario = Scenario.getInstance();
-		myScenario.setTwoOpt(twoOpt);
-		myScenario.setup(scenarioFile);
-		
-	    setHighLows();
+
+		if(Main.setupFlag == false){
+
+			outName = "OutputDir" + rnd.nextInt(Integer.MAX_VALUE);
+
+			if (true)
+				twoOpt = true;
+			else
+				twoOpt = false;
+
+
+			myScenario = Scenario.getInstance();
+			myScenario.setTwoOpt(twoOpt);
+			myScenario.setup(scenarioFile);
+
+			setHighLows();
+			Main.setupFlag = true;
+		}
 	
 	    int count=0;
 	    int chSize=1;

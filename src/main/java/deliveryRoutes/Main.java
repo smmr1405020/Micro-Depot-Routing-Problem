@@ -33,19 +33,16 @@ public class Main {
 
 		Main.FILENAME = "Dataset"+"\\"+"iowa_1.csv";
 		setupFlag = false;
-		Baseline_Algorithm.main(new String[1]);
+		MDVRP_NSGA3_modified.main(new String[1]);
 
 		Main.FILENAME = "Dataset"+"\\"+"iowa_2.csv";
 		setupFlag = false;
-		Baseline_Algorithm.main(new String[1]);
+		MDVRP_NSGA3_modified.main(new String[1]);
 
 		Main.FILENAME = "Dataset"+"\\"+"iowa_3.csv";
 		setupFlag = false;
-		Baseline_Algorithm.main(new String[1]);
+		MDVRP_NSGA3_modified.main(new String[1]);
 
-		Main.FILENAME = "Dataset"+"\\"+"edinburghTest.csv";
-		setupFlag = false;
-		Baseline_Algorithm.main(new String[1]);
 
 	}
 }

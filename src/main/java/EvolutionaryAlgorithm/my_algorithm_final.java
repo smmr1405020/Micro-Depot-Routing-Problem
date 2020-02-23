@@ -89,6 +89,13 @@ public class my_algorithm_final {
 		TOTAL_EVALUATION = 0;
 		improvements=0;
 
+		improvements_mutation=0;
+		improvements_crossover=0;
+		attempt_crossover=0;
+		attempt_mutation=0;
+		improvements_new=0;
+		attempt_new=0;
+
 		Scenario myScenario = Scenario.getInstance();
 
 		if(Main.setupFlag == false){
