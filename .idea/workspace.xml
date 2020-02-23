@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0750a07-3be1-49da-89b4-c6539de2da52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MyAlgo_iowa_1_1582420547100.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyAlgo_iowa_1_1582420556226.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyAlgo_iowa_1_1582420566565.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyAlgo_iowa_1_1582420576406.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyAlgo_iowa_1_1582420584589.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OriginalAlgo_iowa_1_1582421486770.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OriginalAlgo_iowa_2_1582421494794.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OriginalAlgo_iowa_3_1582421519665.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/Baseline_Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/Baseline_Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/MDVRP_NSGA2_modified.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/MDVRP_NSGA2_modified.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/MDVRP_NSGA3_modified.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/MDVRP_NSGA3_modified.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/Scenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/my_algorithm_final.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/my_algorithm_final.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/deliveryRoutes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/deliveryRoutes/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/Baseline_Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/Baseline_Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/MDVRP_NSGA2_modified.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/MDVRP_NSGA2_modified.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/MDVRP_NSGA3_modified.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/MDVRP_NSGA3_modified.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/Scenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/Scenario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/my_algorithm_final.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EvolutionaryAlgorithm/my_algorithm_final.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/deliveryRoutes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/deliveryRoutes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +77,7 @@
       <recent name="C:\Users\User\IdeaProjects\metaheu_2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Baseline_Algorithm">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Baseline_Algorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EvolutionaryAlgorithm.Baseline_Algorithm" />
       <module name="metaheu_2" />
@@ -129,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Baseline_Algorithm" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Baseline_Algorithm" />
         <item itemvalue="Application.ScenarioCSVWriter" />
         <item itemvalue="Application.mainProcess" />
         <item itemvalue="Application.childProcess" />
@@ -178,26 +194,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1579315560237" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1582256647439">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1582286549642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582256647439" />
-    <state width="1493" height="417" key="GridCell.Tab.0.bottom" timestamp="1582286235212">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582286549642" />
+    <state width="1493" height="417" key="GridCell.Tab.0.bottom" timestamp="1582422156922">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="417" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582286235212" />
-    <state width="1493" height="417" key="GridCell.Tab.0.center" timestamp="1582286235211">
+    <state width="1493" height="417" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582422156922" />
+    <state width="1493" height="417" key="GridCell.Tab.0.center" timestamp="1582422156921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="417" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582286235211" />
-    <state width="1493" height="417" key="GridCell.Tab.0.left" timestamp="1582286235211">
+    <state width="1493" height="417" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582422156921" />
+    <state width="1493" height="417" key="GridCell.Tab.0.left" timestamp="1582422156920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="417" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582286235211" />
-    <state width="1493" height="417" key="GridCell.Tab.0.right" timestamp="1582286235212">
+    <state width="1493" height="417" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582422156920" />
+    <state width="1493" height="417" key="GridCell.Tab.0.right" timestamp="1582422156921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="417" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582286235212" />
+    <state width="1493" height="417" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582422156921" />
     <state width="1493" height="578" key="GridCell.Tab.1.bottom" timestamp="1575393507080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -218,10 +234,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1578024158308" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582272459585">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1582419042616">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582272459585" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582419042616" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1577726707823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -238,11 +254,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/deliveryRoutes/Results.java</url>
           <line>54</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/EvolutionaryAlgorithm/my_algorithm_final.java</url>
-          <line>275</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -84,21 +84,30 @@ public class my_algorithm_final {
 		String a = Main.FILENAME;
 		File scenarioFile = new File(a);
 
-		INIT = 100;
-		MAX_EVALUATION = 1500;
-
-		outName = "OutputDir" + rnd.nextInt(Integer.MAX_VALUE);
-
-		if (true)
-			twoOpt = true;
-		else
-			twoOpt = false;
+		INIT = 10;
+		MAX_EVALUATION = 20;
+		TOTAL_EVALUATION = 0;
+		improvements=0;
 
 		Scenario myScenario = Scenario.getInstance();
-		myScenario.setTwoOpt(twoOpt);
-		myScenario.setup(scenarioFile);
 
-		setHighLows();
+		if(Main.setupFlag == false){
+
+			outName = "OutputDir" + rnd.nextInt(Integer.MAX_VALUE);
+
+			if (true)
+				twoOpt = true;
+			else
+				twoOpt = false;
+
+
+			myScenario = Scenario.getInstance();
+			myScenario.setTwoOpt(twoOpt);
+			myScenario.setup(scenarioFile);
+
+			setHighLows();
+			Main.setupFlag = true;
+		}
 
 		int count=0;
 		int chSize=1;
@@ -269,7 +278,10 @@ public class my_algorithm_final {
 		}
 
 		writeRes2();
-
+		map.clear();
+		currentPopulation.clear();
+		taboo_keys.clear();
+		taboo_list.clear();
 	}
 
 	private static boolean addToMap(String key, MAP_Entry mr, String parentage){
@@ -505,9 +517,12 @@ public class my_algorithm_final {
 
 	private static void writeRes2(){
 
-		String fs = Main.FILENAME.split(".")[0];
-//
-		File file = new File("MyAlgo_" + fs + "_" +java.time.LocalDateTime.now()+".csv");
+		String fs = Main.FILENAME.split("Dataset")[1];
+		fs = fs.substring(1);
+		fs = fs.split(".csv")[0];
+		System.out.println(fs);
+
+		File file = new File("MyAlgo"  + "_"+ fs + "_" +System.currentTimeMillis()+".csv");
 
 		try{
 			DecimalFormat df = new DecimalFormat("#.00");

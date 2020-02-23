@@ -57,23 +57,31 @@ public class Baseline_Algorithm {
 		File scenarioFile = new File(a);
 
 
-		INIT = 100;
-		MAX_EVALS = 1500;
+		INIT = 10;
+		MAX_EVALS = 20;
+		improvements = 0;
+		evals =0;
 
-		
-		outName = "OutputDir" + rnd.nextInt(Integer.MAX_VALUE);
-		
-		if (true)
-			twoOpt = true;
-		else
-			twoOpt = false;
-		
-		
 		Scenario myScenario = Scenario.getInstance();
-		myScenario.setTwoOpt(twoOpt);
-		myScenario.setup(scenarioFile);
-		
-	    setHighLows();
+
+		if(Main.setupFlag == false){
+
+			outName = "OutputDir" + rnd.nextInt(Integer.MAX_VALUE);
+
+			if (true)
+				twoOpt = true;
+			else
+				twoOpt = false;
+
+
+			myScenario = Scenario.getInstance();
+			myScenario.setTwoOpt(twoOpt);
+			myScenario.setup(scenarioFile);
+
+			setHighLows();
+			Main.setupFlag = true;
+		}
+
 	
 	    int count=0;
 	    int chSize=1;
@@ -121,7 +129,7 @@ public class Baseline_Algorithm {
 	    		}
 
 	    writeRes2();
-
+	    map.clear();
 	}
 
 	public static MAP_Entry randomEntry() {
@@ -341,9 +349,12 @@ public class Baseline_Algorithm {
 
 	private static void writeRes2(){
 
-		String fs = Main.FILENAME.split(".")[0];
-//
-		File file = new File("OriginalAlgo_" + fs + "_" +java.time.LocalDateTime.now()+".csv");
+		String fs = Main.FILENAME.split("Dataset")[1];
+		fs = fs.substring(1);
+		fs = fs.split(".csv")[0];
+		System.out.println(fs);
+
+		File file = new File("OriginalAlgo"  + "_"+ fs + "_" +System.currentTimeMillis()+".csv");
 
 		try{
 			DecimalFormat df = new DecimalFormat("#.00");

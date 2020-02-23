@@ -387,8 +387,8 @@ public class MDVRP_NSGA3_modified {
 		File scenarioFile = new File(a);
 
 
-		INIT = 100;
-		MAX_EVALUATION = 1500;
+		INIT = 10;
+		MAX_EVALUATION = 20;
 
 		
 		outName = "OutputDir" + rnd.nextInt(Integer.MAX_VALUE);
@@ -657,6 +657,11 @@ public class MDVRP_NSGA3_modified {
 
 
 	    writeRes2();
+		map.clear();
+		currentPopulation.clear();
+		taboo_keys.clear();
+		taboo_list.clear();
+		referencePoints.clear();
 
 	}
 
@@ -893,8 +898,12 @@ public class MDVRP_NSGA3_modified {
 
 	private static void writeRes2(){
 
-//
-		File file = new File("myalgo_NSGA3_modified.csv");
+		String fs = Main.FILENAME.split("Dataset")[1];
+		fs = fs.substring(1);
+		fs = fs.split(".csv")[0];
+		System.out.println(fs);
+
+		File file = new File("NSGA3"  + "_"+ fs + "_" +System.currentTimeMillis()+".csv");
 
 		try{
 			DecimalFormat df = new DecimalFormat("#.00");

@@ -244,7 +244,15 @@ public class Scenario {
 	}
 
 	public  void setup(File scenarioFile){
-		
+
+		rvLocations.clear();
+		rvVehicles.clear();
+		deliveries.clear();
+		primaryVehicle=null;
+		workingDir=".";
+		osmFile = Main.OSMFILE_NAME;
+		twoOpt = true;
+
 		ScenarioCSVReader reader = new ScenarioCSVReader();
 		reader.readFile(scenarioFile, this);
 		deliveries = this.NNSort(primaryVehicle.getStart(),deliveries,"car");
